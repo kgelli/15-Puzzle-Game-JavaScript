@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat'
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.puzzle-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Additional styles for emphasis */
+p strong {
+  font-weight: bold;
+  color: #0066cc; /* Custom color for strong text */
+}
+
+p em {
+  font-style: italic;
+  color: #cc0000; /* Custom color for italicized text */
+}
+
+  
+        
+    </style>
+</head>
+<body onload="initializeGame()">
+    <div id="wrapper">
+        <header class="header">
+            <h1 class="logo"><a href="#">Fifteen Puzzle</a></h1>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Fifteen.html">Puzzle</a></li>
+            </ul>
+        </header> 
+
+        <div id="main">
+            <div class="puzzle-container">
+                <h1>Welcome to the Puzzle World!</h1>
+                <p>Can you solve the Tom & Jerry mystery?</p>
+            </div>
+            <p>The Fifteen Puzzle, originating around 1874, is a straightforward game comprising 15 blocks arranged in a 4×4 grid. Each block is assigned an integer from 1 to 15. The objective is to organize the blocks sequentially from 1 to 15, leaving the empty block (which would hypothetically be numbered 16) in the bottom right corner. In contemporary versions, numerical labels have been replaced by images that, when successfully arranged, form a complete picture. Initially, the blocks are randomly positioned within the grid. Notably, specific initial configurations are unsolvable.</p>
+        </div>
+    </div>
+<br>
+ <div class="ourcontent">
+<h2> Kusal Venkata Sai Shravanth Gelli (002770922) / Manasa Madunuri (002846232)</h2>
+    <ul>
+  <li><a href="https://youtube.com" target="_blank"><h2 style="color: green;">Youtube</h2></a></li>
+  <li><a href="https://docs.google.com/presentation/d/1dPgHX3mC6oiBae90Evg3aDNA88sac6taIhO_mrf3RJQ/edit?usp=sharing" target="_blank"><h2 style="color: green">Presentation</h2></a></li>
+  <li><a href="https://github.com/kgelli/15-Puzzle-Game-JavaScript" target="_blank"><h2 style="color: green">Github</h2></a></li>
+  </ul>
+</div>
+</body>
+</html>
